@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Search, Filter, ShieldCheck, Grid, List, Users } from 'lucide-react';
+import { Search, ShieldCheck, Grid, List, Users, Compass, Languages, RotateCcw } from 'lucide-react';
 import { communitiesData } from '../../data/communities';
 import { CommunityCard } from '../../components/cards/CommunityCard';
+import { EarthSelect } from '../../components/common/EarthSelect';
 import { LanguageFamily, OdishaRegion } from '../../types';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -136,41 +137,28 @@ export const CommunitiesPage: React.FC = () => {
           {/* Secondary Filters: Region & Language Family */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-3 border-t border-earth-sand/60">
             
-            {/* Region Dropdown */}
-            <div>
-              <label className="text-[11px] font-bold uppercase tracking-wider text-earth-mud block mb-1">
-                Filter by Region
-              </label>
-              <select
-                value={selectedRegion}
-                onChange={(e) => setSelectedRegion(e.target.value)}
-                className="w-full py-2 px-3 rounded-lg bg-earth-cream border border-earth-sand text-xs text-earth-soil font-medium focus:outline-none focus:ring-1 focus:ring-earth-terracotta"
-              >
-                {regions.map((r) => (
-                  <option key={r} value={r}>{r}</option>
-                ))}
-              </select>
-            </div>
+            {/* Region Earth-themed Dropdown */}
+            <EarthSelect
+              label="Filter by Region"
+              value={selectedRegion}
+              onChange={setSelectedRegion}
+              options={regions}
+              icon={Compass}
+            />
 
-            {/* Language Family */}
-            <div>
-              <label className="text-[11px] font-bold uppercase tracking-wider text-earth-mud block mb-1">
-                Language Family
-              </label>
-              <select
-                value={selectedLanguageFamily}
-                onChange={(e) => setSelectedLanguageFamily(e.target.value)}
-                className="w-full py-2 px-3 rounded-lg bg-earth-cream border border-earth-sand text-xs text-earth-soil font-medium focus:outline-none focus:ring-1 focus:ring-earth-terracotta"
-              >
-                {languageFamilies.map((lf) => (
-                  <option key={lf} value={lf}>{lf}</option>
-                ))}
-              </select>
-            </div>
+            {/* Language Family Earth-themed Dropdown */}
+            <EarthSelect
+              label="Language Family"
+              value={selectedLanguageFamily}
+              onChange={setSelectedLanguageFamily}
+              options={languageFamilies}
+              icon={Languages}
+            />
 
             {/* Quick Reset */}
-            <div className="flex items-end">
+            <div className="flex flex-col justify-end">
               <button
+                type="button"
                 onClick={() => {
                   setSearchTerm('');
                   setSelectedRegion('All');
@@ -178,9 +166,10 @@ export const CommunitiesPage: React.FC = () => {
                   setSelectedLanguageFamily('All');
                   setSelectedLetter('All');
                 }}
-                className="w-full py-2 px-3 rounded-lg bg-earth-sand/40 hover:bg-earth-sand text-xs font-semibold text-earth-soil transition-colors text-center"
+                className="w-full py-2.5 px-3.5 rounded-xl bg-earth-sand/30 hover:bg-earth-sand/60 border border-earth-sand text-xs font-semibold text-earth-soil transition-colors flex items-center justify-center gap-1.5"
               >
-                Reset All Filters
+                <RotateCcw className="w-3.5 h-3.5 text-earth-terracotta" />
+                <span>Reset All Filters</span>
               </button>
             </div>
 
