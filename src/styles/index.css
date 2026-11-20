@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --earth-brown: #713B27;
+  --terracotta: #A65332;
+  --red-ochre: #C47A50;
+  --mud-brown: #8A4A30;
+  --warm-sand: #E9D8BD;
+  --ivory: #F5EFE2;
+  --cream: #FAF5EA;
+  --dark-soil: #302019;
+  --forest-green: #435C3B;
+  --leaf-green: #71834E;
+  --white: #FFFFFF;
+}
+
+/* Subtle tribal motif watermark / background pattern */
+.bg-saura-pattern {
+  background-image: radial-gradient(#A65332 0.75px, transparent 0.75px), radial-gradient(#713B27 0.75px, #FAF5EA 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-earthen-texture {
+  background-color: #FAF5EA;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23713b27' fill-opacity='0.035' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C47A50;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A65332;
+}
+
+/* Accessibility classes */
+.font-scale-sm {
+  font-size: 90%;
+}
+.font-scale-base {
+  font-size: 100%;
+}
+.font-scale-lg {
+  font-size: 112.5%;
+}
+.high-contrast {
+  filter: contrast(125%);
+}
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Kiosk Exhibition mode touches */
+.exhibition-mode {
+  user-select: none;
+  -webkit-user-select: none;
+}

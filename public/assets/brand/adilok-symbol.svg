@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- ADILOK sacred sun & Idital tree emblem -->
+  <circle cx="50" cy="50" r="46" fill="#A65332" stroke="#FAF5EA" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#FAF5EA" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <!-- Central stylized tree / cosmic spire -->
+  <path d="M50 18 L50 78 M40 32 L50 24 L60 32 M35 44 L50 34 L65 44 M32 56 L50 46 L68 56 M30 68 L50 58 L70 68" stroke="#FAF5EA" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Dancing figures flanking -->
+  <!-- Left figure -->
+  <circle cx="28" cy="46" r="3" fill="#FAF5EA"/>
+  <polygon points="28,50 24,57 32,57" fill="#FAF5EA"/>
+  <polygon points="28,57 24,64 32,64" fill="#FAF5EA"/>
+  <path d="M24 53 L20 59 M32 53 L36 49 M26 64 L24 72 M30 64 L32 72" stroke="#FAF5EA" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Right figure -->
+  <circle cx="72" cy="46" r="3" fill="#FAF5EA"/>
+  <polygon points="72,50 68,57 76,57" fill="#FAF5EA"/>
+  <polygon points="72,57 68,64 76,64" fill="#FAF5EA"/>
+  <path d="M68 53 L64 49 M76 53 L80 59 M70 64 L68 72 M74 64 L76 72" stroke="#FAF5EA" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Sun rays -->
+  <circle cx="50" cy="18" r="4" fill="#FAF5EA"/>
+</svg>
