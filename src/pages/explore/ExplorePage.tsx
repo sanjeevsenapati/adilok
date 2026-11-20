@@ -11,7 +11,7 @@ export const ExplorePage: React.FC = () => {
 
   const [selectedRegion, setSelectedRegion] = useState<string>('All');
 
-  const regions = ['All', 'Southern Highlands', 'Northern Plateau', 'Central Hills'];
+  const regions = ['All', 'Southern Highlands', 'Northern Plateau', 'Central Hills', 'Coastal & Delta'];
 
   const filteredDistricts = districtsData.filter((d) => {
     return selectedRegion === 'All' || d.region === selectedRegion;

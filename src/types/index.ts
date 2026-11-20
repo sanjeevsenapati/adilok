@@ -1,6 +1,6 @@
 export type LanguageFamily = 'Dravidian' | 'Austroasiatic (Munda)' | 'Indo-Aryan';
 
-export type OdishaRegion = 'Southern Highlands' | 'Northern Plateau' | 'Central Hills' | 'Coastal & Delta';
+export type OdishaRegion = 'Southern Highlands' | 'Northern Plateau' | 'Central Hills' | 'Coastal & Delta' | 'Southern Coastal';
 
 export interface Community {
   id: string;
