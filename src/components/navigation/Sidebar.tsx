@@ -69,6 +69,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
     return false;
   };
 
+  // Determine whether to show collapsed view (only on desktop when collapsed and mobile drawer is not open)
+  const isMini = collapsed && !mobileOpen;
+
   return (
     <>
       {/* Mobile Backdrop Overlay */}
@@ -82,80 +85,100 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Sidebar Container */}
       <aside
-        className={`fixed top-0 bottom-0 left-0 z-50 flex flex-col bg-earth-ivory border-r border-earth-sand shadow-earth-lg transition-all duration-300 ease-in-out select-none ${
+        className={`fixed top-0 bottom-0 left-0 z-50 flex flex-col justify-between bg-earth-ivory border-r border-earth-sand shadow-earth-lg transition-all duration-300 ease-in-out select-none overflow-hidden h-screen ${
           // Desktop sizing: collapsed vs expanded
-          collapsed ? 'lg:w-20' : 'lg:w-64'
+          isMini ? 'lg:w-20' : 'lg:w-64'
         } ${
           // Mobile drawer slide-in
           mobileOpen ? 'translate-x-0 w-72' : '-translate-x-full lg:translate-x-0'
         }`}
       >
         
-        {/* Brand Header & Toggle */}
-        <div className="h-20 flex items-center justify-between px-4 border-b border-earth-sand/80 bg-earth-cream/60">
+        {/* Top Brand & Logo Area */}
+        <div className="relative h-20 flex-shrink-0 flex items-center border-b border-earth-sand/80 bg-earth-cream/70 px-3">
           
-          <Link
-            to="/"
-            className="flex items-center gap-3 overflow-hidden group focus:outline-none"
-            title="ADILOK - Home"
-          >
-            <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border border-earth-sand shadow-sm group-hover:scale-105 transition-transform">
-              <img
-                src="/assets/brand/adilok-symbol.svg"
-                alt="ADILOK Emblem"
-                className="w-full h-full object-contain"
-              />
-            </div>
+          {isMini ? (
+            /* Perfectly Centered Logo on top when collapsed */
+            <Link
+              to="/"
+              className="w-full flex items-center justify-center group focus:outline-none"
+              title="ADILOK - The Living Heritage of Odisha"
+            >
+              <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border-2 border-earth-sand shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center">
+                <img
+                  src="/assets/brand/adilok-symbol.svg"
+                  alt="ADILOK Emblem"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </Link>
+          ) : (
+            /* Full Expanded Brand Bar */
+            <div className="w-full flex items-center justify-between overflow-hidden">
+              <Link
+                to="/"
+                className="flex items-center gap-3 overflow-hidden group focus:outline-none"
+                title="ADILOK - Home"
+              >
+                <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border border-earth-sand shadow-sm group-hover:scale-105 transition-transform">
+                  <img
+                    src="/assets/brand/adilok-symbol.svg"
+                    alt="ADILOK Emblem"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
 
-            {(!collapsed || mobileOpen) && (
-              <div className="flex flex-col truncate">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-serif font-black text-xl tracking-wider text-earth-soil">
-                    ADILOK
-                  </span>
-                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-earth-terracotta/10 text-earth-terracotta font-bold border border-earth-terracotta/20">
-                    ODISHA
+                <div className="flex flex-col truncate">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-serif font-black text-xl tracking-wider text-earth-soil">
+                      ADILOK
+                    </span>
+                    <span className="text-[10px] px-1.5 py-0.2 rounded bg-earth-terracotta/10 text-earth-terracotta font-bold border border-earth-terracotta/20">
+                      ODISHA
+                    </span>
+                  </div>
+                  <span className="text-[9px] font-sans font-semibold uppercase tracking-widest text-earth-mud truncate">
+                    {t('tagline')}
                   </span>
                 </div>
-                <span className="text-[9px] font-sans font-semibold uppercase tracking-widest text-earth-mud truncate">
-                  {t('tagline')}
-                </span>
-              </div>
-            )}
-          </Link>
+              </Link>
 
-          {/* Desktop Collapse / Expand Toggle Button */}
+              {/* Mobile Close Button */}
+              <button
+                onClick={onCloseMobile}
+                className="lg:hidden p-2 rounded-lg text-earth-mud hover:text-earth-terracotta hover:bg-earth-sand/50"
+                aria-label="Close navigation menu"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+          )}
+
+          {/* Floating Edge Collapse / Expand Toggle Button on the Right Border */}
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="hidden lg:flex p-1.5 rounded-lg text-earth-mud hover:text-earth-terracotta hover:bg-earth-sand/50 transition-colors focus:outline-none"
-            title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-            aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+            className="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-50 w-7 h-7 rounded-full bg-earth-terracotta text-white hover:bg-earth-soil border-2 border-earth-ivory shadow-md items-center justify-center transition-all hover:scale-110 focus:outline-none"
+            title={collapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
+            aria-label={collapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
           >
-            {collapsed ? <ChevronRight className="w-5 h-5" /> : <ChevronLeft className="w-5 h-5" />}
-          </button>
-
-          {/* Mobile Close Button */}
-          <button
-            onClick={onCloseMobile}
-            className="lg:hidden p-2 rounded-lg text-earth-mud hover:text-earth-terracotta hover:bg-earth-sand/50"
-            aria-label="Close navigation menu"
-          >
-            <X className="w-5 h-5" />
+            {collapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
           </button>
 
         </div>
 
-        {/* Quick Search Button in Sidebar */}
-        <div className="p-3 border-b border-earth-sand/50">
+        {/* Quick Search Button */}
+        <div className="p-2.5 flex-shrink-0 border-b border-earth-sand/50">
           <button
             onClick={onOpenSearch}
-            className={`w-full flex items-center rounded-xl bg-earth-cream hover:bg-earth-sand/40 border border-earth-sand text-earth-mud hover:text-earth-soil transition-all group ${
-              collapsed && !mobileOpen ? 'justify-center p-2.5' : 'gap-3 px-3.5 py-2.5 text-xs'
+            className={`flex items-center rounded-xl bg-earth-cream hover:bg-earth-sand/40 border border-earth-sand text-earth-mud hover:text-earth-soil transition-all group ${
+              isMini
+                ? 'w-12 h-10 mx-auto justify-center'
+                : 'w-full gap-3 px-3.5 py-2 text-xs'
             }`}
             title="Search Cultural Archive (Ctrl + K)"
           >
             <Search className="w-4 h-4 text-earth-terracotta group-hover:scale-110 transition-transform flex-shrink-0" />
-            {(!collapsed || mobileOpen) && (
+            {!isMini && (
               <>
                 <span className="font-medium text-earth-mud/80 text-left flex-grow truncate">
                   {language === 'or' ? 'ଅନୁସନ୍ଧାନ କରନ୍ତୁ...' : 'Search archive...'}
@@ -168,8 +191,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </button>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="flex-grow overflow-y-auto px-3 py-4 space-y-1.5">
+        {/* Main Navigation Links (No scrolling, perfectly fits the screen) */}
+        <nav className="flex-1 overflow-hidden px-2 py-2 space-y-1 flex flex-col justify-center">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const active = isActive(link.to);
@@ -179,28 +202,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 key={link.to}
                 to={link.to}
                 className={`relative flex items-center rounded-xl transition-all group ${
-                  collapsed && !mobileOpen
-                    ? 'justify-center p-3'
-                    : 'gap-3 px-3.5 py-2.5 text-xs font-semibold'
+                  isMini
+                    ? 'w-12 h-11 mx-auto justify-center'
+                    : 'w-full gap-3 px-3.5 py-2 text-xs font-semibold'
                 } ${
                   active
                     ? 'bg-earth-terracotta text-white shadow-md'
-                    : 'text-earth-soil hover:text-earth-terracotta hover:bg-earth-sand/35'
+                    : 'text-earth-soil hover:text-earth-terracotta hover:bg-earth-sand/40'
                 }`}
-                title={collapsed && !mobileOpen ? link.label : undefined}
+                title={isMini ? link.label : undefined}
               >
                 {/* Active left indicator bar */}
                 {active && (
-                  <span className="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-earth-sand" />
+                  <span className="absolute left-0 top-1.5 bottom-1.5 w-1 rounded-r-full bg-earth-sand" />
                 )}
 
                 <Icon
-                  className={`w-5 h-5 flex-shrink-0 transition-transform group-hover:scale-105 ${
+                  className={`w-5 h-5 flex-shrink-0 transition-transform group-hover:scale-110 ${
                     active ? 'text-white' : 'text-earth-terracotta'
                   }`}
                 />
 
-                {(!collapsed || mobileOpen) && (
+                {!isMini && (
                   <div className="flex flex-col truncate">
                     <span className="leading-tight truncate">{link.label}</span>
                     {language === 'or' && (
@@ -212,8 +235,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 )}
 
                 {/* Collapsed Tooltip on hover */}
-                {collapsed && !mobileOpen && (
-                  <div className="absolute left-full ml-3 px-3 py-1.5 bg-earth-soil text-earth-ivory text-xs font-medium rounded-lg shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 whitespace-nowrap">
+                {isMini && (
+                  <div className="absolute left-full ml-3.5 px-3 py-1.5 bg-earth-soil text-earth-ivory text-xs font-medium rounded-lg shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 whitespace-nowrap">
                     {link.label}
                   </div>
                 )}
@@ -222,19 +245,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
           })}
         </nav>
 
-        {/* Bottom Utility Controls */}
-        <div className="p-3 border-t border-earth-sand/80 bg-earth-cream/40 space-y-2">
+        {/* Bottom Utility Controls (Fixed, No Scrolling) */}
+        <div className="p-2.5 flex-shrink-0 border-t border-earth-sand/80 bg-earth-cream/50 space-y-1.5">
           
           {/* Exhibition Mode Link */}
           <Link
             to="/exhibition"
             className={`flex items-center rounded-xl bg-earth-forest text-earth-sand hover:bg-earth-forest/90 font-bold transition-all shadow-sm ${
-              collapsed && !mobileOpen ? 'justify-center p-2.5' : 'gap-2.5 px-3.5 py-2.5 text-xs'
+              isMini
+                ? 'w-12 h-10 mx-auto justify-center'
+                : 'w-full gap-2.5 px-3.5 py-2 text-xs'
             }`}
             title="Launch 4K Large Touchscreen Exhibition Mode"
           >
             <MonitorPlay className="w-4 h-4 text-earth-sand flex-shrink-0" />
-            {(!collapsed || mobileOpen) && (
+            {!isMini && (
               <span className="truncate">{t('navExhibition')}</span>
             )}
           </Link>
@@ -242,13 +267,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
           {/* Language Switcher Button */}
           <button
             onClick={() => setLanguage(language === 'en' ? 'or' : 'en')}
-            className={`w-full flex items-center rounded-xl bg-earth-sand/40 hover:bg-earth-sand/70 text-earth-soil text-xs font-semibold transition-colors border border-earth-sand/80 ${
-              collapsed && !mobileOpen ? 'justify-center p-2.5' : 'gap-2.5 px-3.5 py-2'
+            className={`flex items-center rounded-xl bg-earth-sand/40 hover:bg-earth-sand/70 text-earth-soil text-xs font-semibold transition-colors border border-earth-sand/80 ${
+              isMini
+                ? 'w-12 h-10 mx-auto justify-center'
+                : 'w-full gap-2.5 px-3.5 py-2'
             }`}
             title="Switch Language (English / ଓଡ଼ିଆ)"
           >
             <Globe className="w-4 h-4 text-earth-terracotta flex-shrink-0" />
-            {(!collapsed || mobileOpen) && (
+            {!isMini && (
               <span className="truncate">
                 {language === 'en' ? 'ଓଡ଼ିଆ ଭାଷା' : 'English Mode'}
               </span>
@@ -259,15 +286,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <div className="relative">
             <button
               onClick={() => setAccessibilityOpen(!accessibilityOpen)}
-              className={`w-full flex items-center rounded-xl text-xs font-semibold transition-colors ${
+              className={`flex items-center rounded-xl text-xs font-semibold transition-colors ${
                 accessibilityOpen
                   ? 'bg-earth-terracotta text-white'
                   : 'bg-earth-sand/30 hover:bg-earth-sand/60 text-earth-soil'
-              } ${collapsed && !mobileOpen ? 'justify-center p-2.5' : 'gap-2.5 px-3.5 py-2'}`}
+              } ${
+                isMini
+                  ? 'w-12 h-10 mx-auto justify-center'
+                  : 'w-full gap-2.5 px-3.5 py-2'
+              }`}
               title="Accessibility Tools"
             >
               <Eye className="w-4 h-4 flex-shrink-0" />
-              {(!collapsed || mobileOpen) && (
+              {!isMini && (
                 <span className="truncate">Accessibility</span>
               )}
             </button>
@@ -276,7 +307,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {accessibilityOpen && (
               <div
                 className={`absolute bottom-full mb-2 w-64 bg-earth-ivory border border-earth-sand rounded-2xl shadow-earth-lg p-4 z-50 animate-in fade-in slide-in-from-bottom-2 ${
-                  collapsed && !mobileOpen ? 'left-full ml-2' : 'left-0'
+                  isMini ? 'left-full ml-3' : 'left-0'
                 }`}
               >
                 <div className="flex items-center justify-between pb-2 mb-3 border-b border-earth-sand">
