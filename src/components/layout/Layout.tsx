@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Search, Globe } from 'lucide-react';
 import { Sidebar } from '../navigation/Sidebar';
-import { Footer } from './Footer';
 import { SearchModal } from '../navigation/SearchModal';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -26,7 +25,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-earth-cream text-earth-soil selection:bg-earth-terracotta selection:text-white flex flex-col">
       
-      {/* Left Collapsible Sidebar */}
+      {/* Left Collapsible Sidebar with Integrated Footer & Ethic Links */}
       <Sidebar
         collapsed={collapsed}
         setCollapsed={setCollapsed}
@@ -90,9 +89,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <main className="flex-grow">
           {children}
         </main>
-
-        {/* Earthy Footer */}
-        <Footer />
 
       </div>
 
