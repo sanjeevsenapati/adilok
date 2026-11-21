@@ -78,7 +78,7 @@ export const ExhibitionModePage: React.FC = () => {
       <header className="h-20 bg-earth-soil/95 border-b-2 border-earth-terracotta px-8 flex items-center justify-between flex-shrink-0 z-20">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-earth-terracotta p-0.5 border border-earth-sand">
-            <img src="/assets/brand/adilok-symbol.svg" alt="ADILOK" className="w-full h-full object-contain" />
+            <img src="./assets/brand/adilok-symbol.svg" alt="ADILOK" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="font-serif font-black text-2xl tracking-wider text-earth-sand">
@@ -258,7 +258,7 @@ export const ExhibitionModePage: React.FC = () => {
           className="fixed inset-0 z-50 bg-earth-soil flex flex-col items-center justify-center p-8 text-center cursor-pointer animate-in fade-in duration-500"
         >
           <img
-            src="/assets/art-craft/saura/idital_mural.jpg"
+            src="./assets/art-craft/saura/idital_mural.jpg"
             alt="Mural"
             className="w-64 h-64 rounded-full object-cover border-4 border-earth-terracotta mb-8 shadow-2xl animate-pulse"
           />

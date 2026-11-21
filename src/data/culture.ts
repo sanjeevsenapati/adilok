@@ -11,7 +11,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Performed on all festive occasions, marriages, and harvest gatherings. No individual steps out as a soloist; the beauty lies entirely in the collective wave of syncopated footwork, bending, and swaying in unhurried rhythm with the earth.',
     materialsOrElements: ['Handwoven sarees with contrasting borders', 'Silver anklets and bell cuffs (painri)', 'Fresh forest jasmine and marigolds in hair'],
     seasonOrOccasion: 'Chaitra Parva, Pus Parab, weddings, and post-harvest nights',
-    image: '/assets/culture/dance/dhemsa.jpg'
+    image: './assets/culture/dance/dhemsa.jpg'
   },
   {
     id: 'saura-idital-painting',
@@ -23,7 +23,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Iditals are not decorative canvases; they are religious vows. They depict the Tree of Life (cosmic axis), horses carrying spirits, elephant processions, dancing couples, and celestial bodies. Painted during the Karjy ceremony to ensure the peace and protection of the home.',
     materialsOrElements: ['Red ochre soil (geru)', 'Ground raw rice flour paste', 'Tender twig brush (kunchi)'],
     seasonOrOccasion: 'Karjy ceremony, house consecration, child naming',
-    image: '/assets/art-craft/saura/idital_mural.jpg'
+    image: './assets/art-craft/saura/idital_mural.jpg'
   },
   {
     id: 'kapdaganda-shawl',
@@ -35,7 +35,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Each geometric triangle in the embroidery represents the sacred mountain peaks of Niyamgiri. Red threads honor ancestry and sacrifice; yellow represents peace and heritage; green mirrors the lush forest canopy. The sharp triangular chevron rows also evoke the ancestral axe blade.',
     materialsOrElements: ['Handspun off-white cotton fabric', 'Naturally dyed cotton and silk threads', 'Bone needles'],
     seasonOrOccasion: 'Festivals, courtship, marriages, and winter assemblies',
-    image: '/assets/portraits/dongria_kondh.jpg'
+    image: './assets/portraits/dongria_kondh.jpg'
   },
   {
     id: 'dhokra-brass-casting',
@@ -47,7 +47,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Creates sacred ritual lamps, tribal deities (Nisani, Thakurani), measuring bowls (mana), elephants, owls, and totemic figures essential for temple and clan rites.',
     materialsOrElements: ['Pure beeswax', 'Sal resin (dhuna)', 'Riverbed clay', 'Scrap brass and bell metal'],
     seasonOrOccasion: 'Year-round artisan craftsmanship and festive trade at weekly haats',
-    image: '/assets/museum/dhokra_elephant.jpg'
+    image: './assets/museum/dhokra_elephant.jpg'
   },
   {
     id: 'chaitra-parva',
@@ -59,7 +59,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Marks the transition of seasons, renewing bonds between villages and blessing the soil with community feasts, songs, and ritual archery contests.',
     materialsOrElements: ['Traditional bows and arrows', 'Mahua wine', 'Drum troupes (Changu, Tamak, Mahuri)'],
     seasonOrOccasion: 'Month of Chaitra (March - April)',
-    image: '/assets/culture/dance/dhemsa.jpg'
+    image: './assets/culture/dance/dhemsa.jpg'
   },
   {
     id: 'sohrai-harvest-art',
@@ -71,7 +71,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Cattle are bathed in forest ponds, their horns oiled and anointed with vermilion, and given special cakes of boiled grains. Nights resonate with the resonant beat of the Tumdak and Tamak drums.',
     materialsOrElements: ['Natural earth pigments (white, yellow, black)', 'Cow dung wash', 'Brass lamps', 'Rice flour motifs'],
     seasonOrOccasion: 'Late autumn / winter post-harvest',
-    image: '/assets/hero/highlands.jpg'
+    image: './assets/hero/highlands.jpg'
   },
   {
     id: 'mandia-peja-culinary',
@@ -83,7 +83,7 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'Finger millet is climate-resilient, requiring no chemical fertilizers, and has sustained mountain tribes for thousands of years. It represents health, self-reliance, and food sovereignty.',
     materialsOrElements: ['Hill-grown finger millet (Eleusine coracana)', 'Spring water', 'Earthen cooking pot (Handi)'],
     seasonOrOccasion: 'Daily morning meal and harvest nourishment',
-    image: '/assets/villages/bonda_village.jpg'
+    image: './assets/villages/bonda_village.jpg'
   },
   {
     id: 'kereng-bark-textile',
@@ -95,6 +95,6 @@ export const culturalItemsData: CulturalItem[] = [
     culturalSignificance: 'A testament to tribal botanical mastery, transforming wild forest vegetation into resilient, aesthetically striking garments with natural madder-root red and indigo-blue stripes.',
     materialsOrElements: ['Inner bark of wild Kereng shrub', 'Natural botanical dyes (indigo, madder root)', 'Backstrap wooden loom'],
     seasonOrOccasion: 'Weddings, sacred Gotr gatherings, and weekly haats',
-    image: '/assets/portraits/bonda.jpg'
+    image: './assets/portraits/bonda.jpg'
   }
 ];

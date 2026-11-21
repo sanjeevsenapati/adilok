@@ -13,9 +13,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Gajapati (Pottasingi & Serango hills)',
     provenance: 'Documented from a customary clan dwelling in the Eastern Ghats. Consecrated by the village Kudan-maran during ancestral Karjy rites.',
     curatorNotes: 'The central motif represents the sacred Tree of Life bridging the subterranean spirit underworld, the mortal earth, and the celestial firmament. Geometric triangular stick figures represent dancers, horse riders, and palanquin bearers, surrounded by monkeys, peacocks, and sun-moon cosmograms within a chevron border.',
-    image: '/assets/art-craft/saura/idital_mural.jpg',
+    image: './assets/art-craft/saura/idital_mural.jpg',
     detailImages: [
-      '/assets/art-craft/saura/idital_mural.jpg'
+      './assets/art-craft/saura/idital_mural.jpg'
     ]
   },
   {
@@ -30,9 +30,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Rayagada (Niyamgiri Range)',
     provenance: 'Hand-embroidered by Dongria women using ancient geometric needlework handed down matrilineally across generations.',
     curatorNotes: 'Every single triangular chevron carries cosmic symbolism: the towering peaks of Niyamgiri, the sacrificial axe, the green canopy of the forest, and the yellow glow of turmeric and mountain peace. An emblem of love, courtship, and spiritual defiance.',
-    image: '/assets/portraits/dongria_kondh.jpg',
+    image: './assets/portraits/dongria_kondh.jpg',
     detailImages: [
-      '/assets/portraits/dongria_kondh.jpg'
+      './assets/portraits/dongria_kondh.jpg'
     ]
   },
   {
@@ -47,9 +47,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Kandhamal / Rayagada',
     provenance: 'Commissioned by village headmen for installation at the sacred earthen shrine during annual agrarian propitiation festivals.',
     curatorNotes: 'Cast via the cire-perdue (lost-wax) process using beeswax strings wrapped by hand over a shaped clay core. Note the delicate lattice spiraling, hanging jingle bells, and the solemn rider representing the guardian forest divinity.',
-    image: '/assets/museum/dhokra_elephant.jpg',
+    image: './assets/museum/dhokra_elephant.jpg',
     detailImages: [
-      '/assets/museum/dhokra_elephant.jpg'
+      './assets/museum/dhokra_elephant.jpg'
     ]
   },
   {
@@ -64,9 +64,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Koraput (Lamtaput region)',
     provenance: 'Worn permanently by elder married Gadaba women as a sign of marital bond, clan dignity, and protection against wild carnivores in deep forest trails.',
     curatorNotes: 'Forged by indigenous metallurgists. Once clasped around the bride’s neck upon marriage, it remained a lifetime adornment, removed only at death by special customary rites or replaced during the grand Gotr feast.',
-    image: '/assets/portraits/gadaba.jpg',
+    image: './assets/portraits/gadaba.jpg',
     detailImages: [
-      '/assets/portraits/gadaba.jpg'
+      './assets/portraits/gadaba.jpg'
     ]
   },
   {
@@ -81,9 +81,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Malkangiri (Mudulipada, Bondo Hills)',
     provenance: 'Gathered and strung by Bonda women to cover the neck and upper body, serving simultaneously as primary attire, status insignia, and aesthetic pride.',
     curatorNotes: 'Reflects ancient trans-regional trade routes where highland forest dwellers traded forest spices and tubers at weekly markets for vibrant glass beads manufactured across coastal and inland centers.',
-    image: '/assets/portraits/bonda.jpg',
+    image: './assets/portraits/bonda.jpg',
     detailImages: [
-      '/assets/portraits/bonda.jpg'
+      './assets/portraits/bonda.jpg'
     ]
   },
   {
@@ -98,9 +98,9 @@ export const museumArtefactsData: MuseumArtefact[] = [
     originDistrict: 'Keonjhar (Gonasika Plateau)',
     provenance: 'Meticulously hand-slit and woven by Juang artisans for cleaning hill millets and safeguarding sacred heirloom seeds.',
     curatorNotes: 'Exemplifies zero-waste botanical architecture. The fine diagonal herringbone weave resists dampness and insects when smoked above household cooking hearths.',
-    image: '/assets/portraits/juang.jpg',
+    image: './assets/portraits/juang.jpg',
     detailImages: [
-      '/assets/portraits/juang.jpg'
+      './assets/portraits/juang.jpg'
     ]
   }
 ];

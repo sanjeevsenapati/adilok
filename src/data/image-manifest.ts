@@ -13,7 +13,7 @@ export interface ManifestImage {
 export const imageManifest: Record<string, ManifestImage> = {
   heroHighlands: {
     id: 'heroHighlands',
-    path: '/assets/hero/highlands.jpg',
+    path: './assets/hero/highlands.jpg',
     title: 'Eastern Ghats Tribal Highlands',
     altText: 'Lush misty terraced hills, red earth trails, and traditional tribal hamlet in the Odisha highlands at golden sunrise',
     category: 'hero',
@@ -23,7 +23,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitDongria: {
     id: 'portraitDongria',
-    path: '/assets/portraits/dongria_kondh.jpg',
+    path: './assets/portraits/dongria_kondh.jpg',
     title: 'Dongria Kondh Woman with Kapdaganda Shawl',
     altText: 'Elder Dongria Kondh woman in traditional embroidered Kapdaganda shawl, brass earrings and nose rings',
     category: 'portraits',
@@ -34,7 +34,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitSaora: {
     id: 'portraitSaora',
-    path: '/assets/portraits/lanjia_saora.jpg',
+    path: './assets/portraits/lanjia_saora.jpg',
     title: 'Lanjia Saora Elder with Sacred Murals',
     altText: 'Weathered dignified Lanjia Saora elder wearing traditional necklaces and earrings before an earthen home with Idital murals',
     category: 'portraits',
@@ -45,7 +45,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitBonda: {
     id: 'portraitBonda',
-    path: '/assets/portraits/bonda.jpg',
+    path: './assets/portraits/bonda.jpg',
     title: 'Bonda Tribal Woman in Heritage Regalia',
     altText: 'Bonda tribal woman with circular brass collar, shaved head adorned with beads, and dense colorful San-sari glass bead necklaces',
     category: 'portraits',
@@ -56,7 +56,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitSantal: {
     id: 'portraitSantal',
-    path: '/assets/portraits/santal.jpg',
+    path: './assets/portraits/santal.jpg',
     title: 'Santal Woman in Traditional Panchi Saree',
     altText: 'Proud Santal woman draped in traditional green and red bordered handwoven Panchi saree with wild forest flowers in braided hair',
     category: 'portraits',
@@ -67,7 +67,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitGadaba: {
     id: 'portraitGadaba',
-    path: '/assets/portraits/gadaba.jpg',
+    path: './assets/portraits/gadaba.jpg',
     title: 'Gadaba Elder Woman with Khagla Neck Ring',
     altText: 'Elder Gadaba tribal woman wearing the iconic circular solid brass neck ring (Khagla) and striped Kereng cloth',
     category: 'portraits',
@@ -78,7 +78,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitJuang: {
     id: 'portraitJuang',
-    path: '/assets/portraits/juang.jpg',
+    path: './assets/portraits/juang.jpg',
     title: 'Juang Artisan Weaving Bamboo Craft',
     altText: 'Juang indigenous artisan weaving an intricate golden bamboo grain basket in Keonjhar village courtyard',
     category: 'portraits',
@@ -89,7 +89,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   portraitParaja: {
     id: 'portraitParaja',
-    path: '/assets/portraits/paraja.jpg',
+    path: './assets/portraits/paraja.jpg',
     title: 'Paraja Tribal Woman in Festive Attire',
     altText: 'Smiling Paraja tribal woman wearing red-bordered cotton saree, silver coin necklace and wild forest flowers against misty hills',
     category: 'portraits',
@@ -100,7 +100,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   artSauraMural: {
     id: 'artSauraMural',
-    path: '/assets/art-craft/saura/idital_mural.jpg',
+    path: './assets/art-craft/saura/idital_mural.jpg',
     title: 'Sacred Saura Idital Wall Painting',
     altText: 'Traditional white rice-paste geometric mural of Tree of Life and dancing figures on terracotta red-ochre earthen wall',
     category: 'art-craft',
@@ -111,7 +111,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   cultureDhemsa: {
     id: 'cultureDhemsa',
-    path: '/assets/culture/dance/dhemsa.jpg',
+    path: './assets/culture/dance/dhemsa.jpg',
     title: 'Dhemsa Tribal Folk Dance',
     altText: 'Tribal women dancing arm-in-arm in a synchronized rhythmic Dhemsa line on red soil in golden sunlight',
     category: 'culture',
@@ -122,7 +122,7 @@ export const imageManifest: Record<string, ManifestImage> = {
   },
   museumDhokra: {
     id: 'museumDhokra',
-    path: '/assets/museum/dhokra_elephant.jpg',
+    path: './assets/museum/dhokra_elephant.jpg',
     title: 'Dhokra Lost-Wax Cast Brass Elephant',
     altText: 'Museum display of authentic Odisha tribal Dhokra lost-wax brass cast elephant with deity rider on terracotta plinth',
     category: 'museum',

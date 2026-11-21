@@ -89,7 +89,7 @@ export const HomePage: React.FC = () => {
         {/* Cinematic Background Image with Earthy Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/hero/highlands.jpg"
+            src="./assets/hero/highlands.jpg"
             alt="Odisha Tribal Highlands"
             className="w-full h-full object-cover object-center scale-105 animate-in fade-in duration-1000"
           />
@@ -182,7 +182,7 @@ export const HomePage: React.FC = () => {
                 <div className="relative bg-earth-ivory rounded-3xl overflow-hidden shadow-2xl border-4 border-earth-sand/60">
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <img
-                      src="/assets/portraits/dongria_kondh.jpg"
+                      src="./assets/portraits/dongria_kondh.jpg"
                       alt="Dongria Kondh woman in Kapdaganda shawl"
                       className="w-full h-full object-cover"
                     />
@@ -220,14 +220,14 @@ export const HomePage: React.FC = () => {
                 <div
                   onClick={() => setActiveLightbox({
                     isOpen: true,
-                    imageUrl: '/assets/art-craft/saura/idital_mural.jpg',
+                    imageUrl: './assets/art-craft/saura/idital_mural.jpg',
                     title: 'Sacred Saura Idital Mural',
                     caption: 'Authentic white rice-paste mural painted on red-ochre earthen mud wall, depicting the cosmic Tree of Life.'
                   })}
                   className="cursor-pointer absolute -bottom-6 -left-6 bg-earth-cream p-2.5 rounded-2xl shadow-earth-lg border-2 border-earth-terracotta hidden sm:flex items-center gap-3 hover:scale-105 transition-transform"
                 >
                   <img
-                    src="/assets/art-craft/saura/idital_mural.jpg"
+                    src="./assets/art-craft/saura/idital_mural.jpg"
                     alt="Saura Idital Mural"
                     className="w-14 h-14 rounded-xl object-cover border border-earth-sand"
                   />
@@ -250,7 +250,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* TRIBAL BORDER DIVIDER */}
-      <div className="w-full h-4 bg-repeat-x opacity-60" style={{ backgroundImage: "url('/assets/decorative/borders/saura-border.svg')" }} />
+      <div className="w-full h-4 bg-repeat-x opacity-60" style={{ backgroundImage: "url('./assets/decorative/borders/saura-border.svg')" }} />
 
       {/* DISCOVERY CATEGORIES */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -339,7 +339,7 @@ export const HomePage: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-earth-sand aspect-[16/11]">
               <img
-                src="/assets/culture/dance/dhemsa.jpg"
+                src="./assets/culture/dance/dhemsa.jpg"
                 alt="Dhemsa Folk Dance of Odisha"
                 className="w-full h-full object-cover"
               />

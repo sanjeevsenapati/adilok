@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { HomePage } from './pages/home/HomePage';
 import { CommunitiesPage } from './pages/communities/CommunitiesPage';
@@ -14,7 +14,7 @@ import { ScrollToTop } from './utils/ScrollToTop';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         {/* Exhibition Mode is a dedicated full-screen kiosk interface */}
@@ -89,7 +89,7 @@ export const App: React.FC = () => {
         {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -39,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
           {/* Logo & Brand Identity */}
           <Link to="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-earth-terracotta rounded-lg p-1">
             <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border border-earth-sand shadow-inner group-hover:scale-105 transition-transform">
-              <img src="/assets/brand/adilok-symbol.svg" alt="ADILOK Logo" className="w-full h-full object-contain" />
+              <img src="./assets/brand/adilok-symbol.svg" alt="ADILOK Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <div className="flex items-center gap-2">

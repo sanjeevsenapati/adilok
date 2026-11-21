@@ -13,8 +13,8 @@ export const communitiesData: Community[] = [
     languages: ['Kui', 'Desia Odia'],
     languageFamily: 'Dravidian',
     populationEstimate: 'approx. 10,000 (Census PVTG survey)',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/dongria_kondh.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/dongria_kondh.jpg',
     introduction: 'The Dongria Kondh inhabit the lush slopes of the Niyamgiri hill range in south-western Odisha. Deeply animistic, they revere the mountain as their ancestral supreme deity, Niyam Raja Penu, living in profound symbiotic harmony with the perennial streams, orchids, and dense forest canopies.',
     history: 'Centuries of self-reliant mountain living have forged the Dongria Kondh as skilled horticulturalists of pineapple, banana, and ginger. Their historic resistance to industrial bauxite mining on Niyamgiri in 2013 stands as a globally recognized landmark in indigenous environmental sovereignty and forest conservation rights under the Forest Rights Act.',
     socialOrganisation: {
@@ -69,12 +69,12 @@ export const communitiesData: Community[] = [
     challenges: 'Climate shifts impacting seasonal mountain rainfall, preservation of native kui linguistic fluency among younger scholars, and sustainable value-addition for forest produce.',
     gallery: [
       {
-        url: '/assets/portraits/dongria_kondh.jpg',
+        url: './assets/portraits/dongria_kondh.jpg',
         caption: 'Dongria Kondh woman in traditional Kapdaganda shawl and heritage ear adornments.',
         credit: 'ADILOK Indigenous Photographic Archive'
       },
       {
-        url: '/assets/hero/highlands.jpg',
+        url: './assets/hero/highlands.jpg',
         caption: 'Misty hills and terraced orchards across the Niyamgiri mountain range.',
         credit: 'Odisha Tribal Landscapes Documentation'
       }
@@ -107,8 +107,8 @@ export const communitiesData: Community[] = [
     languages: ['Sora (Saura)', 'Desia Odia'],
     languageFamily: 'Austroasiatic (Munda)',
     populationEstimate: 'approx. 56,000 (SCSTRTI survey)',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/lanjia_saora.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/lanjia_saora.jpg',
     introduction: 'The Lanjia Saora are renowned across the world for their distinctive "Idital" pictogram wall paintings and their ingenious dry-stone terraced agricultural engineering sculpted into the steep Eastern Ghats hillsides. Their name references the long tail-like end of their traditional handwoven loincloth.',
     history: 'Mentioned in ancient Indian epics as the legendary devotees of Jagannath (Lord Jagannath’s origin is deeply linked to the tribal deity Nilamadhaba worshipped by King Viswavasu, a Saora chief). Their history is anchored in animist spiritual cosmologies preserved across millennia.',
     socialOrganisation: {
@@ -157,7 +157,7 @@ export const communitiesData: Community[] = [
     challenges: 'Conservation of ancient stone terraced canal networks and supporting authentic artisan cooperatives against mass commercialization.',
     gallery: [
       {
-        url: '/assets/portraits/lanjia_saora.jpg',
+        url: './assets/portraits/lanjia_saora.jpg',
         caption: 'Elder Lanjia Saora artisan against an earthen mud house with sacred paintings.',
         credit: 'ADILOK Indigenous Documentation'
       }
@@ -190,8 +190,8 @@ export const communitiesData: Community[] = [
     languages: ['Remo', 'Desia'],
     languageFamily: 'Austroasiatic (Munda)',
     populationEstimate: 'approx. 12,000',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/bonda.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/bonda.jpg',
     introduction: 'The Bonda, who call themselves "Remo" (meaning "Human Being"), reside in the rugged Bondo Hills situated at an altitude of 3,000 feet in Malkangiri district. They are celebrated for their fierce independence, matriarchal customs where older women traditionally marry younger grooms, and elaborate brass and beaded attire.',
     history: 'Believed to be one of the earliest migratory branches of Austroasiatic peoples in the subcontinent, the Bonda have fiercely protected their highland forests and customary self-governance across millennia, trading forest goods at the famous weekly Onukudelli market.',
     socialOrganisation: {
@@ -240,7 +240,7 @@ export const communitiesData: Community[] = [
     challenges: 'Preservation of wild plant fibers used in traditional weaving, road accessibility to remote upper hill settlements, and healthcare delivery.',
     gallery: [
       {
-        url: '/assets/portraits/bonda.jpg',
+        url: './assets/portraits/bonda.jpg',
         caption: 'Bonda woman adorned with traditional brass collar and multilayered glass beads.',
         credit: 'ADILOK Heritage Visual Repository'
       }
@@ -273,8 +273,8 @@ export const communitiesData: Community[] = [
     languages: ['Santali', 'Odia'],
     languageFamily: 'Austroasiatic (Munda)',
     populationEstimate: 'approx. 890,000 (Odisha census)',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/santal.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/santal.jpg',
     introduction: 'The Santal constitute one of the largest and most culturally vibrant indigenous communities in Odisha, predominantly centered around the Similipal biosphere in Mayurbhanj. Pioneers of literature and democratic customary governance, they write in the indigenous Ol Chiki script invented in 1925 by Pandit Raghunath Murmu.',
     history: 'The Santal have a profound historical legacy of social justice and resistance, including the historic 1855 Santal Hool (Rebellion). Odisha is proud to be the homeland of India’s current President, Smt. Droupadi Murmu, who hails from the Mayurbhanj Santal community.',
     socialOrganisation: {
@@ -323,7 +323,7 @@ export const communitiesData: Community[] = [
     challenges: 'Maintaining environmental protection of the Similipal tiger reserve buffer zones and youth migration to industrial centers.',
     gallery: [
       {
-        url: '/assets/portraits/santal.jpg',
+        url: './assets/portraits/santal.jpg',
         caption: 'Santal woman in traditional bordered Panchi saree adorned with fresh forest flowers.',
         credit: 'ADILOK Indigenous Documentation'
       }
@@ -356,8 +356,8 @@ export const communitiesData: Community[] = [
     languages: ['Gutob', 'Ollari', 'Desia'],
     languageFamily: 'Austroasiatic (Munda)',
     populationEstimate: 'approx. 85,000',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/gadaba.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/gadaba.jpg',
     introduction: 'The Gadaba are one of the most culturally distinctive highland tribes of the Koraput valley. Renowned for their majestic circular "Dhemsa" dance and the historic art of weaving multicolored striped garments from wild tree bark, they represent an ancient riverine and highland heritage.',
     history: 'Legend recounts their ancestry linked to the Godavari riverbanks before settling deep within the valleys of Koraput. Their traditional stone seats (Sodor) located at the village entrance are sacred democratic councils older than recorded history.',
     socialOrganisation: {
@@ -406,7 +406,7 @@ export const communitiesData: Community[] = [
     challenges: 'Scarcity of wild Kereng trees in degraded forests has made traditional bark weaving an endangered craft requiring urgent botanical conservation.',
     gallery: [
       {
-        url: '/assets/portraits/gadaba.jpg',
+        url: './assets/portraits/gadaba.jpg',
         caption: 'Gadaba woman in traditional striped handwoven garment and historic brass neck ring.',
         credit: 'ADILOK Tribal Collection'
       }
@@ -433,8 +433,8 @@ export const communitiesData: Community[] = [
     languages: ['Juang', 'Odia'],
     languageFamily: 'Austroasiatic (Munda)',
     populationEstimate: 'approx. 49,000',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/juang.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/juang.jpg',
     introduction: 'The Juang inhabit the verdant Gonasika hills of Keonjhar, where the sacred river Baitarani originates from a rock naturally shaped like a cow’s nostril (Gonasika). Historically known in colonial literature as leaf-wearers (Patua), they possess an extraordinary repository of ethnobotanical and musical knowledge.',
     history: 'According to their origin myth, the first human beings on earth sprang directly from the earth at Gonasika. Their customary dormitory, the Majang, continues to serve as the heart of community justice and nocturnal drumming.',
     socialOrganisation: {
@@ -483,7 +483,7 @@ export const communitiesData: Community[] = [
     challenges: 'Ecological degradation around upper catchment areas and ensuring fair pricing for bamboo handicrafts.',
     gallery: [
       {
-        url: '/assets/portraits/juang.jpg',
+        url: './assets/portraits/juang.jpg',
         caption: 'Juang artisan carrying handcrafted bamboo basket in Keonjhar highlands.',
         credit: 'ADILOK Heritage Archive'
       }
@@ -510,8 +510,8 @@ export const communitiesData: Community[] = [
     languages: ['Parji', 'Desia Odia'],
     languageFamily: 'Dravidian',
     populationEstimate: 'approx. 400,000',
-    heroImage: '/assets/hero/highlands.jpg',
-    portraitImage: '/assets/portraits/paraja.jpg',
+    heroImage: './assets/hero/highlands.jpg',
+    portraitImage: './assets/portraits/paraja.jpg',
     introduction: 'The Paraja (derived from "Praja", the original subjects or sons of the soil) are one of the most culturally expansive and hospitable tribes of southern Odisha. Renowned for their lyrical poetry, celebratory lifestyle, and expertise in terraced rice farming, their lore forms the backbone of Gopinath Mohanty’s monumental Sahitya Akademi and Jnanpith-winning novel, "Paraja".',
     history: 'Inhabiting the rolling Koraput plateau for centuries, the Paraja have four major subdivisions: Bada Paraja, Sana Paraja, Kandha Paraja, and Pengu Paraja, each preserving distinct marriage rituals and clan totems.',
     socialOrganisation: {
@@ -560,7 +560,7 @@ export const communitiesData: Community[] = [
     challenges: 'Soil erosion along steep slopes and ensuring fair prices for organic coffee and aromatic rice harvests.',
     gallery: [
       {
-        url: '/assets/portraits/paraja.jpg',
+        url: './assets/portraits/paraja.jpg',
         caption: 'Paraja dancers adorned for the spring Chaitra Parva celebration.',
         credit: 'ADILOK Archives'
       }

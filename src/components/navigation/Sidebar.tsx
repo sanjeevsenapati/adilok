@@ -106,7 +106,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border-2 border-earth-sand shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center">
                 <img
-                  src="/assets/brand/adilok-symbol.svg"
+                  src="./assets/brand/adilok-symbol.svg"
                   alt="ADILOK Emblem"
                   className="w-full h-full object-contain"
                 />
@@ -122,7 +122,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               >
                 <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-earth-terracotta p-0.5 border border-earth-sand shadow-sm group-hover:scale-105 transition-transform">
                   <img
-                    src="/assets/brand/adilok-symbol.svg"
+                    src="./assets/brand/adilok-symbol.svg"
                     alt="ADILOK Emblem"
                     className="w-full h-full object-contain"
                   />

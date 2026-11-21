@@ -55,7 +55,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full overflow-hidden bg-earth-terracotta p-0.5 border border-earth-sand">
                 <img
-                  src="/assets/brand/adilok-symbol.svg"
+                  src="./assets/brand/adilok-symbol.svg"
                   alt="ADILOK"
                   className="w-full h-full object-contain"
                 />
