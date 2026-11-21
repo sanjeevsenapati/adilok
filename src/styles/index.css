@@ -67,3 +67,15 @@
   user-select: none;
   -webkit-user-select: none;
 }
+
+/* Prevent blue focus outline / box on interactive SVG elements and mouse-clicked elements */
+svg, svg *, svg:focus, svg *:focus, svg:focus-visible, svg *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button:focus:not(:focus-visible), [role="button"]:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none;
+}

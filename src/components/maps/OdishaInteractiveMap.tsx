@@ -151,7 +151,8 @@ export const OdishaInteractiveMap: React.FC = () => {
             {/* SVG Canvas for all 30 actual geographic districts */}
             <svg
               viewBox="0 0 800 750"
-              className="w-full h-full drop-shadow-sm select-none"
+              className="w-full h-full drop-shadow-sm select-none focus:outline-none outline-none"
+              style={{ outline: 'none' }}
             >
               <defs>
                 {/* Water pattern for Bay of Bengal */}
@@ -199,10 +200,11 @@ export const OdishaInteractiveMap: React.FC = () => {
                       onClick={() => dist && setSelectedDistrict(dist)}
                       onMouseEnter={() => setHoveredDistrictName(item.name)}
                       onMouseLeave={() => setHoveredDistrictName(null)}
-                      className="cursor-pointer transition-all duration-150"
+                      className="cursor-pointer transition-all duration-150 focus:outline-none outline-none"
                       role="button"
                       tabIndex={0}
                       aria-label={`Select ${item.name}`}
+                      style={{ outline: 'none' }}
                     >
                       {/* District Boundary Polygon */}
                       <path
@@ -213,7 +215,8 @@ export const OdishaInteractiveMap: React.FC = () => {
                         strokeLinejoin="round"
                         strokeLinecap="round"
                         filter={isSelected ? 'url(#activeDistrictGlow)' : undefined}
-                        className="transition-colors duration-150"
+                        className="transition-colors duration-150 focus:outline-none outline-none"
+                        style={{ outline: 'none' }}
                       />
 
                       {/* District Centroid Dot */}
