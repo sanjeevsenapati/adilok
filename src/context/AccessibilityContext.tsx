@@ -16,7 +16,10 @@ const AccessibilityContext = createContext<AccessibilityContextType | undefined>
 
 export const AccessibilityProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [fontScale, setFontScale] = useState<FontScale>('base');
-  const [highContrast, setHighContrast] = useState<boolean>(false);
+  const [highContrast, setHighContrast] = useState<boolean>(() => {
+    const saved = localStorage.getItem('adilok_high_contrast');
+    return saved !== null ? saved === 'true' : true; // High contrast is default
+  });
   const [reducedMotion, setReducedMotion] = useState<boolean>(false);
 
   useEffect(() => {
@@ -35,12 +38,15 @@ export const AccessibilityProvider: React.FC<{ children: React.ReactNode }> = ({
     } else {
       root.classList.remove('reduce-motion');
     }
+
+    localStorage.setItem('adilok_high_contrast', String(highContrast));
   }, [fontScale, highContrast, reducedMotion]);
 
   const resetAccessibility = () => {
     setFontScale('base');
-    setHighContrast(false);
+    setHighContrast(true); // Default setting
     setReducedMotion(false);
+    localStorage.setItem('adilok_high_contrast', 'true');
   };
 
   return (
