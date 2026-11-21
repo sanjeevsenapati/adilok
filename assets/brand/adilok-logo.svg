@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Symbol -->
+  <g transform="translate(10, 8) scale(0.64)">
+    <circle cx="50" cy="50" r="46" fill="#A65332" stroke="#FAF5EA" stroke-width="2.5"/>
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#FAF5EA" stroke-width="1.2" stroke-dasharray="3,3"/>
+    <path d="M50 18 L50 78 M40 32 L50 24 L60 32 M35 44 L50 34 L65 44 M32 56 L50 46 L68 56 M30 68 L50 58 L70 68" stroke="#FAF5EA" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="28" cy="46" r="3" fill="#FAF5EA"/>
+    <polygon points="28,50 24,57 32,57" fill="#FAF5EA"/>
+    <polygon points="28,57 24,64 32,64" fill="#FAF5EA"/>
+    <circle cx="72" cy="46" r="3" fill="#FAF5EA"/>
+    <polygon points="72,50 68,57 76,57" fill="#FAF5EA"/>
+    <polygon points="72,57 68,64 76,64" fill="#FAF5EA"/>
+  </g>
+  <!-- Text -->
+  <text x="86" y="44" font-family="'Playfair Display', serif" font-size="28" font-weight="800" fill="#302019" letter-spacing="1.5">ADILOK</text>
+  <text x="88" y="60" font-family="'DM Sans', sans-serif" font-size="9.5" font-weight="600" fill="#A65332" letter-spacing="2.8">PEOPLE · CULTURE · HERITAGE</text>
+</svg>
