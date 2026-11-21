@@ -34,4 +34,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: adilok.co.in
           publish_dir: ./dist
-          cname: adilok.co.in
